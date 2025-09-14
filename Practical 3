@@ -1,0 +1,29 @@
+Practical 3
+
+3A]
+3A] Basic Recording using Notepad 
+1. Launch UiPath Studio and create a new Process project named 
+BasicRecordingNotepad.
+ 
+2. Open Main.xaml and go to Record → Basic from the top toolbar.
+ 
+3. In the recorder window, click Open Application and select notepad.exe.
+ 
+4. Click inside the Notepad window and use Type to enter your message.
+ 
+5. Click Save & Exit to add the recorded actions to the workflow. 
+
+6. Press Run to see Notepad open and your text typed automatically.
+
+Conclusion: Thus we have studied how to create basic Recording using Notepad. 
+
+3B] Basic Recording using G-Mail 
+1. Use Recorder to open Gmail in Chrome at https://mail.google.com/mail/u/0/#inbox. 
+2. Recorder step: Click "Compose" to start a new email.
+ 
+3. Recorder step: Type chinmay3244.cd@gmail.com into the To field. 
+
+4. Recorder step: Type "Welcome to Email !" in the email body area. 
+
+5. Recorder step: Click "Send" to send the email.
+
