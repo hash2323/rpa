@@ -1,0 +1,126 @@
+Practical 6
+
+6A]
+A] Demonstrate the following activities in UiPath: 
+i) Mouse (click, double click and hover) 
+1. Open UiPath Studio and create a new Process.
+ 
+2. Add a Sequence inside the Main workflow.
+ 
+3. Use Application/Browser activity and set application path as 
+C:\Windows\System32\notepad.exe. 
+
+4. Inside the Do container, add a Type Into activity and indicate the 
+text area of Notepad. 
+
+5. Type the text "Hello UI Path! This is demo for Click, Double 
+Click, and Hover".
+
+6. Add a Click activity and indicate the File menu in Notepad, set 
+click type to Single and mouse button to Left. 
+
+7. Add another Click activity and indicate the Maximize button of 
+Notepad, set click type to Double and mouse button to Left. 
+
+8. Add a Hover activity and indicate the Close button of Notepad.
+
+ii) Type into 
+1. Open UiPath Studio and create a new Process. 
+
+2. Add a Sequence inside the Main workflow. 
+
+3. Use Application/Browser activity and set application path as 
+C:\Windows\System32\notepad.exe. 
+
+4. Inside the Do container, add a Type Into activity and indicate the 
+text area of Notepad. 
+
+5. Type the text "Hello UI Path! This is demo for Click, Double Click, 
+and Hover".
+
+Conclusion: Thus we have studied to demonstrate Mouse Events and 
+Type into activity in UiPath.
+
+6B]
+B] Demonstrate the following Events in UiPath: 
+i) Element triggering event 
+1.  Open UiPath and create a new Process. 
+
+2.  Drag and drop Trigger Scope activity into the sequence. 
+
+3.  Inside Trigger Scope → add Click Trigger activity. 
+
+4.  Indicate the Notepad text area (or any clickable area inside 
+Notepad) as the target element. 
+
+5.  Select Mouse Button as BTN_LEFT. 
+
+6.  Go to Actions panel → add a Sequence. 
+
+7.  Inside the Sequence → drag Use Application/Browser activity and 
+select Notepad  (C:\Windows\System32\notepad.exe). 
+
+8.  Inside Do block → add Type Into activity. 
+
+9.  Indicate the text area of Notepad. 
+
+10.  Enter text → "Hello UI Path". 
+
+11.  After that, add a Message Box activity. 
+
+12.  Enter text → "Click Event Triggered". 
+
+13.  Run the workflow → when you click in Notepad (on the selected 
+element), text will be typed and the message box will appear.
+
+ii) Image triggering event 
+1. Open UiPath and create a new Process. 
+2. Drag and drop Trigger Scope activity into the sequence. 
+
+3. Inside Trigger Scope → add Click Image Trigger activity.
+ 
+4. Indicate the image on screen (e.g., the picture shown in your 
+workflow). 
+
+5. Select Mouse Button as BTN_LEFT. 
+
+6. Go to Actions panel → add a Sequence. 
+
+7. Inside the Sequence → add a Message Box. 
+
+8. Enter text → "Image Triggered".
+
+9. Run the workflow → when the image is clicked, the trigger fires 
+and shows the message.
+
+iii) System Triggering Event 
+1. Open UiPath and create a new Process. 
+
+2. Drag and drop Trigger Scope activity into the sequence. 
+
+3. Inside Trigger Scope → add System Trigger activity.
+ 
+4. Set TriggerInput → select both Keyboard and Mouse. 
+
+5. Go to Actions panel → add a Sequence.
+
+6. Inside the Sequence → drag Use Application/Browser activity and 
+select Notepad (C:\Windows\System32\notepad.exe). 
+
+7. Inside Do block → add Type Into activity. 
+
+8. Indicate editable text area in Notepad. 
+
+9. Enter text → "Hello Swayam". 
+
+10.  After that, add a Message Box. 
+
+11.  Enter text → "System Triggered". 
+12.  Run the workflow → when keyboard/mouse input happens, 
+Notepad opens, types text, and message box appears. 
+
+Conclusion: Thus we have studied to demonstrate triggerring events in 
+UiPath 
+
+
+
