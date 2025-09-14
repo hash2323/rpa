@@ -1,0 +1,104 @@
+Practical 4
+
+4A]
+4A] Automate the process to extract data from an excel file into a data table and vice 
+versa Create a new Sequence in your Main workflow. 
+1. Drag a Use Excel File activity and set the path to input.xlsx. 
+2. Inside it, add a Read Range activity and save the output to a variable dtData.
+ 
+3. Drag another Use Excel File activity and set the path to output.xlsx. 
+
+4. Inside it, add a Write Range activity and pass dtData as the DataTable input. 
+
+5. Set the target sheet name (e.g., "Sheet1") and tick the Add Headers option. 
+
+6. Run the workflow to read data from input.xlsx and write it to output.xlsx. 
+
+Conclusion: Thus we have studied how to automate the process to extract data from an excel 
+file into a data table and vice versa Create a new Sequence in your Main workflow. 
+
+4B] Create an automation To Write data to specific cell of an excel sheet. 
+1. Drag Use Excel File activity and select the Excel file path (testing.xlsx). 
+
+2. Inside it, add a Write Cell activity. 
+
+
+3. Set What to Write as "College". 
+
+4. Set Where to Write as Excel.Sheet("SheetName").Cell("H4") or 
+Excel.SelectedSheet.Cell("H4").
+
+5. Run the workflow to write "College" into cell H4 in Excel.
+
+Conclusion: Thus we have studied how to create an automation To Write data to specific cell 
+of an excel sheet. 
+
+4C] Create an automation To Read data to specific cell of an excel sheet. 
+1. Drag and drop a Use Excel File activity and choose your Excel file. 
+
+2. Inside it, add a Read Cell activity. 
+
+3. Set Cell to read as Excel.Sheet("SheetName").Cell("A2") or 
+Excel.SelectedSheet.Cell("A8").
+
+4. Assign the output to a variable (e.g., cellValue). 
+
+5. (Optional) Use a Message Box or Write Line to display cellValue. 
+
+Conclusion: Thus we have studied how to create an automation To Read data to specific cell 
+of an excel sheet.
+
+4D]
+4D] Create an automation To append data to specific cell of an excel sheet. 
+1. Use "Excel Application Scope" – Open the target Excel file by providing its path. 
+
+2.  Inside the scope, add "Write Cell" activity – This will allow writing directly to a 
+specific cell. 
+
+3. Set "SheetName" in Write Cell – Enter the name of the worksheet (e.g., "Sheet1"). 
+
+4. Set "Cell" property – Provide the cell address where you want to append data (e.g., 
+"C5"). 
+
+5. Set "Value" property – Type the data or use a variable to write into that specific cell.
+ 
+6. Save and run the workflow – This will append/write the data to the desired cell in 
+Excel.
+
+Conclusion: Thus we have studied how create an automation To append data to specific cell 
+of an excel sheet. 
+
+4E] Create an automation To sort a table of an excel sheet. 
+1. Use "Excel Application Scope" – Open the Excel file containing the table to be 
+sorted. 
+
+2. Use "Sort Table" activity – Drag this inside the scope to perform sorting.
+ 
+3. Set "SheetName" – Enter the worksheet name (e.g., "Sheet1"). 
+
+4. Set "Table Name" – Provide the exact table name (e.g., "Table1"). 
+
+5. Configure "Sort Fields" – Add column names and sort order (e.g., {"Rollno", 
+"Ascending"}).
+
+6. Run the automation – The table will be sorted as per your settings. 
+Before sort:  
+                                  
+After Sort: 
+Conclusion: Thus we have studied how to create an automation To sort a table of an excel 
+sheet. 
+
+4F] Create an automation To filter a table of an excel sheet. 
+1.Use Use Excel File and select your Excel file. 
+2. Inside it, add Filter Excel activity. 
+
+3.Set the Source (e.g. Excel.Sheet("Sheet1")). 
+
+4. Filter By, choose the Column Name (e.g. "Location").
+
+5.Set the Filter Condition (e.g. equals "Pen"). 
+Before filter :                                                           
+After filter: 
+Conclusion: Thus we have studied how to create an automation To filter a table of an excel 
+sheet.
+
