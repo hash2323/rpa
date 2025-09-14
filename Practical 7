@@ -1,0 +1,46 @@
+Practical 7
+
+7A]
+A] Automate the following screen scraping method using UiPath: 
+i) Full Text  
+Steps:  
+1. Use Open Browser to navigate to Amazon Electronics page. 
+
+2. Add Get Text activity and indicate the element (“Electronics”). 
+
+3. Save the output to a variable (scrapdata). 
+
+4. Use Message Box to display scrapdata.ToString. 
+ 
+Conclusion: Thus we have studied to demonstrate Full Text method in 
+UiPath
+
+B) Demonstrate Data Scraping and display values in Message box    
+using OCR. 
+Steps: 
+1. Open UiPath Studio and create a new process. 
+
+2. Drag and drop the Use Application/Browser activity and select 
+Chrome browser. 
+
+3. In the Browser URL property, enter chrome://newtab/. 
+
+4. Inside the Do container, add a Get OCR Text activity.
+ 
+5. Indicate the target area in the Chrome window where you want to 
+scrape text. 
+
+6. Select Tesseract OCR Engine as the OCR method. 
+
+7. Create a variable (e.g., variable1) to store the extracted text output.
+
+8. After the OCR activity, add a Message Box activity. 
+
+9. In the Text property of the Message Box, pass the variable name 
+with .ToString. 
+
+10. Run the workflow → it will scrape text from the browser and 
+display it in the message box. 
+
+Conclusion: Thus we have studied to demonstrate Data Scraping Using 
+OCR in UiPath.
