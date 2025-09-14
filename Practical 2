@@ -1,0 +1,113 @@
+Practical 2
+
+2A]
+2A] Consider an array of names. We have to find out how many of them start with the 
+letter "a". Create an automation where the number of names starting with "a" is. 
+counted and the result is displayed. 
+1. Create a new sequence in UiPath named CountNamesWithA.
+
+2. Add an Assign activity to define namesArray = {"alice", "bob", "amy", "Alex", 
+"john", "Annie"}. 
+
+3. Add another Assign activity to initialize countA = 0. 
+
+4. Insert a For Each activity to loop through namesArray with TypeArgument set to 
+String. 
+
+5. Inside the loop, add an If activity with condition item.ToLower.StartsWith("a"). 
+
+6. In the Then block, add an Assign: countA = countA + 1.
+
+7. After the loop, add a Message Box: "Number of names starting with 'a': " & 
+countA.ToString. 
+
+8. Run the workflow to display the count result. 
+
+Conclusion: Thus we have studied how to create an automation where the number of names 
+starting with "a" is. counted and the result is displayed.
+
+2B]
+
+2B] Demonstrate switch statement with an example. 
+1. Use an Input Dialog activity to let the user select from Admin;Guest;User and store it in 
+the userRole (Type: String) variable. 
+
+2. Add a Switch activity with Expression: userRole and set TypeArgument to String. 
+
+3. Add cases: "Admin", "User", "Guest" and a Default case for unrecognized roles.
+
+4. Inside each case, add a Write Line activity to show a message like 
+"Welcome, Guest” 
+
+Conclusion: Thus we have studied how to demonstrate switch statement with an example. 
+
+2C] Create an automation To Print numbers from 1 to 10 with break after the writeline 
+activity inside for each activity. 
+1. Assign → numbers = Enumerable.Range(1, 10).ToArray (Type: Array of Int32) 
+
+2. For Each → loop through numbers with loop variable num (TypeArgument: Int32) 
+
+3. Write Line → num.ToString inside the loop
+
+4. Break → Place immediately after Write Line to exit loop after printing the first number 
+
+Conclusion: Thus we have studied how to create an automation To Print numbers from 1 to 
+10 with break after the writeline activity inside for each activity. 
+
+2D] Create an automation using Do..While Activity to print numbers from 5 to 1 
+1. Create a new Process in UiPath Studio and name it appropriately. 
+
+2. Drag a Sequence activity into the Main workflow to organize your actions. 
+
+3. Create an Integer variable called counter and set its default value to 5.
+ 
+4. Drag a Do...While activity inside the Sequence to implement the loop.
+ 
+5. Inside the Do section, add a Write Line activity to display the current value of counter. 
+6. Below that, add an Assign activity to decrement the counter by 1 (i.e., counter = 
+counter - 1). 
+
+7. Set the Do...While condition to counter >= 1 to continue the loop until 1. 
+
+8. Run the workflow to see the numbers 5 to 1 printed in the Output panel. 
+
+Conclusion: Thus we have studied how to create an automation using Do..While Activity to 
+print numbers from 5 to 1. 
+
+2E] Create an automation using Delay Activity between two writeline activities to 
+separate their execution by 5 seconds 
+1. Create a new Process in UiPath Studio and open the Main.xaml. 
+2. Drag a Sequence activity onto the Designer panel to structure the workflow. 
+
+3. Create an integer variable named counter and initialize it to 5. 
+
+4. Drag a Do While activity inside the sequence to perform the countdown. 
+
+5. Inside the Do While Body, first add a Delay activity and set Duration to 00:00:01 (1 
+second pause). 
+
+6. Below Delay, add a Write Line activity with counter.ToString to print the current 
+number. 
+
+7. Add an Assign activity below the Write Line to update the counter: counter = counter - 1.
+ 
+8. Set the Do While condition to counter >= 1 to repeat until counter drops below 1.
+
+9. Run the workflow, and it will print numbers from 5 to 1 with a 1-second 
+delay between each. 
+
+Conclusion: Thus we have studied how to create an automation using Delay Activity 
+between two writeline activities to separate their execution by 5 seconds
+
+2F] Create an automation to demonstrate use of decision statements (if) 
+1. Use Input Dialog → Ask user to enter their age in a Text Box and store it in Agelimit 
+(Type: String) 
+
+2. Use If activity → Condition: Integer.Parse(Agelimit) > 18 
+
+3. In Then block → Add Message Box: "You can Drive!" 
+
+4. In Else block → Add Message Box: "You cannot drive!" 
+
+Conclusion: Thus we have studied how to create an automation to demonstrate use of 
+decision statements (if) 
