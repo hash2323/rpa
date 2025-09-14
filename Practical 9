@@ -1,0 +1,56 @@
+Practical 9
+9A]
+
+A] Demonstrate Email Automation to Configure and Read Email, 
+Send Email with Attachments, Reply to Email. 
+Steps: 
+1. Open UiPath Studio and create a new Process. 
+
+2. Drag Use Gmail activity into the Designer panel. 
+
+3. In Account, enter your Gmail ID (e.g., 
+swayamban132@gmail.com). 
+
+4. Inside Do container of Use Gmail, drag a Send Email activity. 
+
+5. In the Account field of Send Email, select Gmail. 
+
+6. In the To field, enter recipient’s email (e.g., 
+swayamjb23hds@student.mes.ac.in). 
+
+7. Enter a Subject as "This is sample mail with attachment for email 
+automation". 
+
+8. Select Body type as HTML, then provide body text (if required). 
+
+9. Add Attachments by browsing file paths 
+(e.g.,"C:\Users\Admin\Desktop\NewFile.txt")
+
+10.  After Send Email, drag a For Each Email activity. 
+
+11.  In “In emails from”, select Gmail.Folder("Inbox"). 
+
+12.  Set limit to first 5 emails and check Unread mail and Retrieve   
+attachments options. 
+
+13.  The variable CurrentMail will get automatically created in the for 
+each activity. 
+
+14.  Inside the loop, drag a Message Box activity.
+ 
+15.  In Message Box, set Text as CurrentMail.Body to display email  
+body. 
+
+16.  After Message Box, drag a Reply To Email activity. 
+
+17.  In Email, select CurrentMail. 
+
+18.  In Add To recipients, enter recipient’s email (e.g., 
+swayamjb23hds@student.mes.ac.in).
+ 
+19.  Set New subject as "Email Automation". 
+
+20.  In Body, select HTML and enter message "Thank You so much i 
+got the email". 
+
+21.  Save the project and run the automation. 
