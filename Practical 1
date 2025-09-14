@@ -1,0 +1,111 @@
+Practical 1
+
+1A] Create a simple sequence based project. 
+1. Create a blank project and, on the Design tab, in the File group, select New > Sequence. 
+The New Diagram window is displayed. 
+[Note: You can also add a Sequence activity to the Designer panel to create a new sequence.] 
+
+2. In the Name field type a name for the automation, such as "First Sequence," and click 
+Create. The Designer panel is updated accordingly. 
+
+3. Create three String variables such as strFirstName, strLastName, and strHairColor, so 
+that you can store data from the user in them. Leave the Default field empty, to indicate 
+that there is no default value. 
+
+4. Drag three Input Dialog activities to the Designer panel, one under the other. 
+
+5. Select the first Input Dialog and, in the Properties panel, add a Label asking for the first 
+name of the user, and a custom Title. 
+
+6. In the Result field add the strFirstName variable. This indicates that this variable is going 
+to be updated with the value added by the user at this point. 
+
+7. Repeat steps 6 - 7 for the second and third Input Dialog activities to ask the user for his 
+last name and hair color, and store them in the strLastName and strHairColor variables.
+ 
+8. Add a Message Box activity under the third Input Dialog. 
+
+9. Select the Message Box and, in the Properties panel, in the Text field, add the variables 
+and a string to enable you to display all information gathered from the user, such as: 
+strFirstName + " " + strLastName + " has " + strHairColor + " hair."
+
+10. On the Design tab, in the File group, click Run. The automation is executed. The final 
+output message should look as in the following screenshot. 
+
+Conclusion : Thus we have studied to create a simple sequence based project.
+
+1B]
+1B] Create a flowchart-based project. 
+1. Open UiPath Studio and create a new Blank Process named "FirstFlowchart".
+ 
+2. Open Main.xaml, drag a Flowchart activity into the Designer panel. 
+
+3. Create three String variables: strFirstName, strLastName, and strHairColor. 
+
+4. Drag three Input Dialog activities into the Flowchart to collect first name, last name, and hair color. 
+[Like this create for last name and haircolor] 
+
+5.  Set Labels and Titles in each Input Dialog and store results in the corresponding variables.
+
+6. Add a Message Box activity and set the text to strFirstName + " " + strLastName + " has " + 
+strHairColor + " hair."
+
+7. Connect all activities in sequence inside the Flowchart from Start to Message Box. 
+
+8.  Click Run to execute the project and view the output.
+
+Conclusion : Thus we have studied to  create  a flowchart-based project.
+
+1C]
+1C] Automate UiPath Number Calculation (Subtraction, Multiplication, Division of numbers). 
+1. Open UiPath Studio and create a new Blank Process named "NumberCalculation".
+ 
+2. Open Main.xaml, drag a Flowchart or Sequence activity into the Designer panel. 
+
+3. Create four variables: num1 (Double), num2 (Double), subResult (Double), mulResult (Double), 
+divResult (Double). 
+
+4. Add two Input Dialog activities to get num1 and num2 from the user as strings.
+
+5. Use Assign activities to convert inputs to Double using CDbl() (e.g., num1 = CDbl(strNum1)).
+ 
+6. Add three Assign activities to calculate subResult = num1 - num2, mulResult = num1 * num2, 
+divResult = num1 / num2. 
+
+7. Add a Message Box to display all results: "Subtraction: " + subResult.ToString + vbNewLine + 
+"Multiplication: " + mulResult.ToString + vbNewLine + "Division: " + divResult.ToString 
+
+8. Click Run to execute and test with any numbers.
+
+Conclusion : Thus we have studied how to create a Automate UiPath Number Calculation. 
+
+1D] Create an automation UiPath project using different types of variables (number, datetime, 
+Boolean, generic, array, data table)  
+1. Number (Int32) 
+Use an Assign activity to create myNumber = 10 (Type: Int32).
+
+2. DateTime 
+Use an Assign activity to create myDate = Now (Type: DateTime).
+
+3. Boolean 
+Use an Assign activity to create isEligible = myNumber > 5 (Type: Boolean). 
+
+4. Generic Value 
+Use an Assign activity to create myGeneric = "25" (Type: GenericValue).
+
+5. Array: Use an Assign activity to create myArray = {"Apple", "Banana", "Cherry"} (Type: Array of 
+String). 
+
+6. DataTable: Use a Build Data Table activity to create myTable with columns (Name, Age) and rows, 
+then loop it using For Each Row in DataTable and add a Write Line to display: "Name: " + 
+row("Name").ToString + ", Age: " + row("Age").ToString.
+
+Conclusion: Thus we have studied how to create an automation UiPath project using different types of 
+variables
+
+
+
+
+
+
+
