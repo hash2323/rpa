@@ -1,0 +1,163 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuat="clr-namespace:UiPath.UIAutomationNext.Activities.Triggers;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1271,1294" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:TriggerScope DisplayName="Trigger Scope" sap:VirtualizedContainerService.HintSize="570,1271" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
+      <ui:TriggerScope.Action>
+        <ActivityAction x:TypeArguments="uuat:MonitorClickEventArgs">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="uuat:MonitorClickEventArgs" Name="args" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="518,813" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="hi - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,753" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="23f04439-8b8c-4b59-b491-ebb05b30f51f" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'hi'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="23f04439-8b8c-4b59-b491-ebb05b30f51f" Text="hello" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable ContentHash="ZoB4J2aDuUiF42lxhLqveg" DesignTimeRectangle="6, 75, 1428, 377" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="fd11c1e7-97d7-4739-989d-db283fad9c15" InformativeScreenshot="2d6a8072ecb5cd1e6dbd29fbceb89708.png" Reference="hcSHBGVI4EGkM4FCrat1Ig/2p8fF8l99U6vnC70QX2roQ" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;click event done&quot;]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="78, 78, 1440, 490" ContentHash="7CnnE8liwUymabernxNQHQ" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPPSURBVFhHrZTHUxRBGMW9WCL75xiqvBoQBMGcUQxIEBQVMCL+DxzAKr14MhVIUFAMBAGJG2d3ZxcUYfMuSeH8rO6Z7p2A24swVa+mqg/ze9978/WmTSmezVUNRZurGkDeG3G25kf9ANVGnKX11PtWiup9K3gkL/MPEN33/MY995LurNa5gBrnvO7spi2BKmtcd1YxHsW1sQjKRyPiNB7JK6iTl1Hn/YOCViv9QP7bCdyTlnBXWkRe8zg9y20eQ7VjHrcdc8h5M0rPsl+P4IY1jusTMWS9GqZn+14OEzDKR8MoGwmL06jzLuOh9w8eeH7jvluZ+q60hDuuRdS6yMQLKnget+xzysS2BAXfmFDgleNRVIzxqSm4dCSEkuGQ2IAJLBHwIgdTuH0Ot2wqnIDVqSvHY6uAwxR89XuQysgzPQTM4qZTqz1zMJvaCE72zOMuHSZTK+DioQCuDAXEBvRgFrcWrMStBxumpmBl6uKhIAVfHpzFpYFZsYFUPdOp0+iZgr9rwBQ+g4vfZsQGdHHb5mCpbdKt1FpkqWni4KJvv3Ch/5fYgL7nxLoMZNY0cfD5/mkU9k2LDWjXStuzKe5/9Tw4i4sDZOIZDj7fN43C3p841/tTbOB/e1Z+Mm3cKrhPAZ/t+YEzPVNiA6utFdtn01oNsr9b3zOLOwn+gdNfp3DqSxoG2FqxfSY/krHbdJVZ04gzX6dU+CROfvaLDRjjXq8BBTyJE5/9OP7JJzZgvD5JzynjNvXM4p7EyS8MrMCPdctiA6ae+S2Woudefc8ETOJmUx/r9uHoRxlHPnrFBkxrNWBeKwbmU+t6TsZNwd0ELOPwBy8OffCIDRj3mVwmxm7TVWZ1I52awrs8KOh0iw0Y416Pga3VjQq4y438TjcOvpfEBpS4xT2ztTLHrZm4y6OAOyXkvZeQ+84lNqAFs+tzrT0TMImbTZ33zkXhBzqcYgPmtdKA+VopYLJW7O9OTq0FK1MTcE6HE9ntDrEB8z4ra6Xf5+RameImYDXuAx0uDt7f5kBWm11sgIG116c57lXAmp751O0OZLcRuB1ZrXbsa7WJDaTbM1ur1XrOaWdTJ8F739qwp8UqNtAsTZuuT3PcqXtmcWvBu1useD6axkXk9/tB5PP5qGRZNsnr9XJ5PB4ut9vNJUkSlcvl4nI609iCF4+LkEgkqOLxOFUsFuOKRqNUkUiEKxwOc4VCIa5gMEgVCASoXtQXig1c35mB8u1bUKqqZNv6RL5Rtn0LKnZk4PauDLGBZ/mWkid5mWjK3TiR7z09aMHzQ5ZiI+8vgOYUr08dsXUAAAAASUVORK5CYII=" InformativeScreenshot="65fba4ae8dd6f8f193e3c279bafca34e.png" Reference="hcSHBGVI4EGkM4FCrat1Ig/8qsEdIj2_kSwZx2cvrJw5Q" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:TriggerScope.Action>
+      <ui:TriggerScope.Triggers>
+        <scg:List x:TypeArguments="Activity" Capacity="4">
+          <uix:NClickTrigger BlockEvent="False" Button="Left" DisplayName="Click Event Trigger 'hi'" Enabled="True" sap:VirtualizedContainerService.HintSize="534,227" sap2010:WorkflowViewState.IdRef="NClickTrigger_1" IncludeChildren="True" KeyModifiers="None" Mode="Down" SchedulingMode="Sequential" TriggerId="9266b49c-c41a-462d-bcd5-afee076947b8" Version="V5">
+            <uix:NClickTrigger.Target>
+              <uix:TargetAnchorable ContentHash="f7jBbQeV_EaTS_8nFyzBNA" DesignTimeRectangle="46, 10, 287, 32" FullSelectorArgument="&lt;wnd cls='Microsoft.UI.Content.DesktopChildSiteBridge' idx='3' /&gt;" Guid="5f8855a3-f2db-43e3-a142-ae7550cc2b45" InformativeScreenshot="3e00d2e8f25bb6fd2d57d5a79d53bcc4.png" Reference="hcSHBGVI4EGkM4FCrat1Ig/cn_d7YjaLU6PInMpjelXJw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+            </uix:NClickTrigger.Target>
+          </uix:NClickTrigger>
+        </scg:List>
+      </ui:TriggerScope.Triggers>
+    </ui:TriggerScope>
+  </Sequence>
+</Activity>
