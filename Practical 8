@@ -1,0 +1,56 @@
+Practical 8
+8A]
+A] Read Pdf with OCR. 
+Steps: 
+1. Open UiPath Studio and create a new process. 
+
+2.  Drag and drop the Read PDF with OCR activity into the 
+workflow. 
+
+3. In the File Name property, provide the path of the PDF file (e.g., 
+"C:\Users\Admin\Desktop\Offer Letter.pdf"). 
+
+4.  Select Tesseract OCR as the OCR engine to extract text. 
+
+5.  Create a variable (e.g., scrap_data) to store the extracted text. 
+
+6.  After the OCR activity, add a Message Box activity. 
+
+7.  In the Text property of the Message Box, write 
+scrap_data.ToString. 
+
+8. Run the workflow: UiPath will read the PDF file using OCR and 
+display the extracted text in a message box.
+
+Conclusion: Thus we have studied to demonstrate Read Pdf with OCR 
+Activity in UiPath
+ 
+B] Demonstrate Exception Handling Using UiPath 
+Steps: 
+1. Open UiPath Studio and create a new process. 
+
+2. Create a variable named “Array” of type Int32[] and assign default 
+value {10, 20}.
+
+3. Create another variable named “i” of type Int32 and assign default 
+value -1. 
+
+4. Drag and drop a Sequence activity into the workflow. 
+
+5. Insert a Try Catch activity inside the sequence. 
+
+6. In the Try block, add a Message Box with text Array(i).ToString. 
+
+7. In the Catch block, set exception type as: 
+System.IndexOutOfRangeException. 
+
+8. Add a Message Box in the Catch block with text:  
+Exception.ToString. 
+
+9. In the Finally block, add a Message Box with text "Exception 
+Handled". 
+
+10. Run the workflow to see exception handling execution. 
+
+Conclusion: Thus we have studied to demonstrate Exception Handling 
+Using UiPath.
