@@ -1,0 +1,11 @@
+Practical 5
+
+A] Implement the attach window activity, Automate using Anchor Base, Automate using 
+Element Exists. 
+1. Open Browser – Launch Google Chrome and navigate to the given URL. 
+
+2. Check App State – Verify if the "Images" tab element is present on the page. 
+
+3. If Target Appears – Show message box: "Target has appeared". 
+
+4. If Target Does Not Appear – Show message box: "Target did not appear".
