@@ -1,0 +1,98 @@
+Sequence
+It is one of the most simplest type of workflow used to arrange activities in a linear order.
+
+
+2. Flowchart
+It is one of the workflow design type used to represent automation processes in a visual diagram-like structure.
+
+
+
+
+---
+
+PC-2
+
+1. Decision-making
+It means choosing which path the workflow should follow based on condition.
+
+
+2. Looping
+Looping lets you repeat a set of activities until a condition is met.
+
+
+
+
+---
+
+PC-3
+
+1. Recorder
+It is a tool used to capture user action of an application and convert them into automation sequence.
+
+
+
+Basic Recorder – Generates a linear sequence of activities.
+
+Desktop – Used for automating desktop applications.
+
+Web – Designed for web browser-based automation.
+
+Citrix – Designed for virtual environment (such as Citrix, Remote recorder).
+
+
+
+---
+
+PC-4
+Excel Automation
+It is an automation process of using UiPath activities to read, write, receive, send and automate data.
+
+
+---
+
+PC-5
+PDF Automation
+It is the process of using UiPath activities to extract complete data from PDF files.
+
+
+---
+
+PC-6
+
+1. Keyboard activities – They are used to type text, enter, tab etc.
+
+
+2. Mouse activities – They are used to perform actions such as clicking, hovering, or dragging.
+
+
+
+
+---
+
+PC-7
+
+1. Screen scraping – It is used to extract data from the selected screen or window.
+
+
+2. Data scraping – It is used to extract structured data from web application or websites.
+
+
+
+
+---
+
+PC-8
+
+1. PDF automation – It is used to read data from PDF files.
+
+
+2. Exception handling – It ensures that automation does not break when error occurs.
+
+
+
+
+---
+
+PC-9
+Email automation
+It is an automation process of using UiPath to read, receive, send and automate daily.
